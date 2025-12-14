@@ -1,0 +1,88 @@
+.jobCard {
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.jobCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companyLogo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.saveBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Body */
+.jobCardBody {
+  margin-top: 12px;
+}
+
+.jobTitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.companyName,
+.jobLocation {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Badges */
+.badges {
+  margin: 8px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.fullTime {
+  background: #e0f2ff;
+  color: #0077cc;
+}
+
+/* Pay */
+.pay {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Footer */
+.jobCardFooter {
+  margin-top: 12px;
+}
+
+.applyBtn {
+  width: 100%;
+  padding: 10px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.applyBtn:hover {
+  background: #005fa3;
+}
