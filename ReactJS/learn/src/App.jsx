@@ -88,7 +88,7 @@ const App = () => {
 
   return (
     <>
-    <div className='cards-row'>
+    <div className='flex flex-wrap gap-4 justify-center'>
     {jobsData.map((element, idx)=><div key={idx}><Card 
     image={element.img} 
     jobTitle={element.jobTitle} 
