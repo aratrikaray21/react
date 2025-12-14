@@ -1,39 +1,100 @@
-.body{
-  margin: 0;
-  padding: 0;
+.cards-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
 }
 
-.card{
-  border: 1px solid #ccc;
+.job-card {
+  width: 320px;
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
-  margin: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: Arial, sans-serif;
 }
-.card-title{
-  font-size: 1.5em;
-  margin-bottom: 8px;
-}
-.card-content{
-  font-size: 1em;
-  color: #555;
-}
-.navbar{
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  display: flex;  align-items: center;
+
+/* Header */
+.job-card-header {
+  display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
-.navbar-title{
-  margin: 0;
-  font-size: 1.5em;
-  display: inline;
 
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
-.navbar-item{
-  display: inline;
-  margin-right: 15px;
+
+.save-btn {
+  background: none;
+  border: none;
   cursor: pointer;
-} 
+  font-size: 16px;
+}
+
+/* Body */
+.job-card-body {
+  margin-top: 12px;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.company-name,
+.job-location {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Badges */
+.badges {
+  margin: 8px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.full-time {
+  background: #e0f2ff;
+  color: #0077cc;
+}
+
+.part-time {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Pay */
+.pay {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Footer */
+.job-card-footer {
+  margin-top: 12px;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 10px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #005fa3;
+}
