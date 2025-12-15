@@ -4,10 +4,10 @@ import { useState } from 'react'
 const App = () => {
   const [num, setNum] = useState(0)
 
-  const increment = () => setNum(num + 1)
-  const decrement = () => setNum(num - 1)
-  const jumpBy5=()=>setNum(num + 5)
-
+  const increment = () => setNum(prev=>prev + 1)
+  const decrement = () => setNum(prev=>prev - 1)
+  const jumpBy5=()=>setNum(prev=>prev + 5) 
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
       <div className="w-full max-w-sm">
