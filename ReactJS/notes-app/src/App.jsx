@@ -9,6 +9,8 @@ const App = () => {
   const [editHeading, setEditHeading] = useState('')
   const [editBody, setEditBody] = useState('')
 
+  
+
   const submitHandler = (e) => {
     e.preventDefault();
     const copyTask = [...tasks]
@@ -40,6 +42,8 @@ const App = () => {
     setTasks(updatedTasks)
     setEditIndex(null)
   }
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-rose-50 to-yellow-50 flex items-center justify-center p-6 font-sans">
@@ -88,7 +92,7 @@ const App = () => {
         <section className="mt-8">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold text-rose-700 flex items-center gap-2">Recent Notes <span className="text-xs bg-rose-100 text-rose-600 px-2 py-0.5 rounded-full">{tasks.length}</span></h2>
-            <button className="text-sm text-rose-500 hover:underline">View all</button>
+        
           </div>
 
           <div className="space-y-3">
