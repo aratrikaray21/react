@@ -19,11 +19,13 @@ const App = () => {
   return (
     <>
       <button className="px-4 py-2 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition" onClick={getUser}>Click Me</button>
-      {user && (<><p>{user.name}</p>
-        <p>{user.email}</p>
-        <p>{user.phone}</p>
-        <p>{user.website}</p>
-      </>
+       {user && (
+        <div className="mt-4 p-4 bg-white rounded-lg shadow">
+          <h2 className="text-lg font-semibold">{user.name}</h2>
+          <p className="text-sm text-gray-600">{user.email}</p>
+          <p className="text-sm text-gray-600">{user.phone}</p>
+          <p className="text-sm text-gray-600">{user.website}</p>
+        </div>
       )}
 
 
